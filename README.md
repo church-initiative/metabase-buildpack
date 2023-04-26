@@ -4,7 +4,4 @@ Heroku Buildpack for Metabase
 
 Add the following to your app.json:
 
-"buildpacks": [
-{ "url": "https://github.com/heroku/heroku-buildpack-jvm-common"},
-{ "url": "https://github.com/church-initiative/metabase-buildpack"}
-]
+"buildpacks": [{"url": "https://github.com/church-initiative/metabase-buildpack"}]
