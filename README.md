@@ -1,7 +1,23 @@
-# NOTE: the Heroku Buildpack release artifact will no longer be maintained by Metabase, as we strongly encourage everyone to either deploy in Heroku via containers or fork this repository. Please see announcement https://www.metabase.com/releases/Metabase-0.45
+# Church Initiative Buildpack for Metabase
 
-Heroku Buildpack for Metabase
+[Metabase](https://www.metabase.com) is the easy, open-source way for everyone in your company to ask questions and learn from data.
 
-Add the following to your app.json:
+[![Latest Release](https://img.shields.io/github/release/metabase/metabase.svg?label=latest%20release)](https://github.com/metabase/metabase/releases)
 
-"buildpacks": [{"url": "https://github.com/church-initiative/metabase-buildpack"}]
+## Update process
+
+1. Determine the latest version number of metabase
+2. Update the version number located in the `/bin/version` file in the buildpack
+3. Commit change to the github repository
+4. Access the Metabase App on Heroku
+5. Deploy the metabase master branch
+
+## Heroku Buildpack for Metabase
+
+Add the following buildpack to your heroku project:
+
+- https://github.com/church-initiative/metabase-buildpack
+
+Or add the following to app.json file:
+
+- "buildpacks": [{"url": "https://github.com/church-initiative/metabase-buildpack"}]
